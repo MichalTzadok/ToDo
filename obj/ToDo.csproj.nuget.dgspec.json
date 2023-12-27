@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Core\\LESSON 2\\ToDo\\ToDo.csproj": {}
+    "F:\\Core\\lesson 3\\ToDo\\ToDo.csproj": {}
   },
   "projects": {
-    "F:\\Core\\LESSON 2\\ToDo\\ToDo.csproj": {
+    "F:\\Core\\lesson 3\\ToDo\\ToDo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Core\\LESSON 2\\ToDo\\ToDo.csproj",
+        "projectUniqueName": "F:\\Core\\lesson 3\\ToDo\\ToDo.csproj",
         "projectName": "ToDo",
-        "projectPath": "F:\\Core\\LESSON 2\\ToDo\\ToDo.csproj",
+        "projectPath": "F:\\Core\\lesson 3\\ToDo\\ToDo.csproj",
         "packagesPath": "C:\\Users\\The user\\.nuget\\packages\\",
-        "outputPath": "F:\\Core\\LESSON 2\\ToDo\\obj\\",
+        "outputPath": "F:\\Core\\lesson 3\\ToDo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

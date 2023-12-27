@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oz6sdk8DaoCd12OVDla3yI357Yn5kRmeeSmyYtWfYVuZtxUWs9dKq4R1Jx8i4vytcVKXrIbNibxXlEcEvgcaHg==",
+  "dgSpecHash": "Ic16UpaHGwXbWj+jPckXh41yV0R5X+own4/k26bZ8cOyAQm9A70hJ6zNxQhSuSAzwJrxw+G3IWj3oT2WLHv0dw==",
   "success": true,
-  "projectFilePath": "F:\\Core\\LESSON 2\\ToDo\\ToDo.csproj",
+  "projectFilePath": "F:\\Core\\lesson 3\\ToDo\\ToDo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\The user\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\The user\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

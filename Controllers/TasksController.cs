@@ -1,44 +1,65 @@
 using Microsoft.AspNetCore.Mvc;
 using ToDo.Models;
 using ToDo.Services;
+using ToDo.Interfaces;
 namespace ToDo.Controllers;
 
 [ApiController]
 [Route("[controller]")]
 public class TasksController : ControllerBase
 {
+    ITaskService TaskService;
+    public TasksController(ITaskService taskService){
+        this.TaskService=taskService;
+    }
     [HttpGet]
-    public ActionResult<List<task>> Get()
-    {
-        return TaskService.GetAll();
-    }
+        public ActionResult<List<task>> GetAll() =>
+            TaskService.GetAll();
 
-    [HttpGet("{id}")]
-    public ActionResult<task> Get(int id)
-    {
-        var Task = TaskService.GetById(id);
-        if (Task == null)
-            return NotFound();
-        return Task;
-    }
 
-    [HttpPost]
-    public ActionResult Post(task newTask)
-    {
-        var newId = TaskService.Add(newTask);
-
-        return CreatedAtAction("Post", 
-            new {id = newId}, TaskService.GetById(newId));
-    }
-
-    [HttpPut("{id}")]
-    public ActionResult Put(int id,task newPizza)
-    {
-        var result = TaskService.Update(id, newPizza);
-        if (!result)
+        [HttpGet("{id}")]
+        public ActionResult<task> GetById(int id)
         {
-            return BadRequest();
+            var task = TaskService.GetById(id);
+
+            if (task == null)
+                return NotFound();
+
+            return task;
         }
-        return NoContent();
-    }
+
+        [HttpPost] 
+        public IActionResult Create(task task)
+        {
+            TaskService.Add(task);
+            return CreatedAtAction(nameof(Create), new {id=task.Id}, task);
+
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Update(int id, task task)
+        {
+            if (id != task.Id)
+                return BadRequest();
+
+            var existingTask = TaskService.GetById(id);
+            if (existingTask is null)
+                return  NotFound();
+
+            TaskService.Update(task);
+
+            return NoContent();
+        }
+
+    [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var pizza = TaskService.GetById(id);
+            if (pizza is null)
+                return  NotFound();
+
+            TaskService.Delete(id);
+
+            return NoContent();
+        }
 }
