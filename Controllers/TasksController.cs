@@ -1,29 +1,39 @@
-namespace ToDo.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using ToDo.Models;
 using ToDo.Interfaces;
-public class tasksController : ControllerBase
-{
-public tasksController(){}
-    
+using Microsoft.AspNetCore.Authorization;
+
+
+
+  namespace ToDo.Controllers{
+  
 
     [ApiController]
     [Route("[controller]")]
     public class TasksController : ControllerBase
     {
       readonly ITaskService TaskService;
-       public TasksController(ITaskService taskService)
-       {
+
+        private readonly int userId;
+
+       public TasksController(ITaskService taskService/*,IHttpContextAccessor httpContextAccessor*/)
+       {   
+        //  this.userId = int.Parse(httpContextAccessor?.HttpContext?.User?.FindFirst("Id")?.Value);
            this.TaskService = taskService;
+
        }
        [HttpGet]
+       [Authorize(Policy = "Admin")]
        public ActionResult<List<task>> GetAll() =>
                TaskService.GetAll();
 
 
        [HttpGet("{id}")]
+       [Authorize(Policy = "User")]
        public ActionResult<task> GetById(int id)
-       {
+       {           
+        System.Console.WriteLine(userId);
+
            var task = TaskService.GetById(id);
 
            if (task == null)
@@ -33,6 +43,8 @@ public tasksController(){}
        }
 
        [HttpPost]
+              [Authorize(Policy = "User")]
+
        public IActionResult Create(task task)
        {
            TaskService.Add(task);
@@ -69,31 +81,30 @@ public tasksController(){}
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

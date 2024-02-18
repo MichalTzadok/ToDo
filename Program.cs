@@ -1,5 +1,5 @@
-// using ToDo.Interfaces;
-// using ToDo.Services;
+using ToDo.Interfaces;
+using ToDo.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.OpenApi.Models;
 using ToDo.Middlewares;
@@ -18,9 +18,9 @@ builder.Services.AddAuthentication(options =>
      .AddJwtBearer(cfg =>
      {
          cfg.RequireHttpsMetadata = true;
-        //  cfg.TokenValidationParameters = TaskTokenService.GetTokenValidationParameters();
+         cfg.TokenValidationParameters = TokenService.GetTokenValidationParameters();  
      });
-//
+
 
 
 builder.Services.AddAuthorization(cfg =>
@@ -58,8 +58,8 @@ builder.Services.AddSwaggerGen(c =>
    });
 
 
-builder.Services.AddSingleton<ToDo.Interfaces.ITaskService,ToDo.Services.TaskService>();
-builder.Services.AddSingleton<ToDo.Interfaces.IUserService,ToDo.Services.UserService>();
+builder.Services.AddSingleton<ITaskService,TaskService>();
+builder.Services.AddSingleton<IUserService,UserService>();
 
 builder.Services.AddControllers();
 
