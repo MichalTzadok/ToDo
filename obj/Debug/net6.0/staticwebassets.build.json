@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "CboidON8hDTFsjHQ7s3rW7+1ZlPGtfkVe11EmzLG6bo=",
+  "Source": "ToDo",
+  "BasePath": "_content/ToDo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ToDo\\wwwroot",
+      "Source": "ToDo",
+      "ContentRoot": "F:\\core מעודכן\\core\\ToDo\\wwwroot\\",
+      "BasePath": "_content/ToDo",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "F:\\core מעודכן\\core\\ToDo\\wwwroot\\css\\site.css",
+      "SourceId": "ToDo",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\core מעודכן\\core\\ToDo\\wwwroot\\",
+      "BasePath": "_content/ToDo",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "F:\\core מעודכן\\core\\ToDo\\wwwroot\\index.html",
+      "SourceId": "ToDo",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\core מעודכן\\core\\ToDo\\wwwroot\\",
+      "BasePath": "_content/ToDo",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "F:\\core מעודכן\\core\\ToDo\\wwwroot\\js\\site.js",
+      "SourceId": "ToDo",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\core מעודכן\\core\\ToDo\\wwwroot\\",
+      "BasePath": "_content/ToDo",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
+    }
+  ]
+}

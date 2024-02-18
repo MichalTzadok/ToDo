@@ -1,0 +1,74 @@
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\obj\Debug\net6.0\ToDo.csproj.AssemblyReference.cache
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\obj\Debug\net6.0\ToDo.GeneratedMSBuildEditorConfig.editorconfig
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\obj\Debug\net6.0\ToDo.AssemblyInfoInputs.cache
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\obj\Debug\net6.0\ToDo.AssemblyInfo.cs
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\obj\Debug\net6.0\ToDo.csproj.CoreCompileInputs.cache
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\obj\Debug\net6.0\ToDo.MvcApplicationPartsAssemblyInfo.cs
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\obj\Debug\net6.0\ToDo.MvcApplicationPartsAssemblyInfo.cache
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\bin\Debug\net6.0\appsettings.Development.json
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\bin\Debug\net6.0\appsettings.json
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\bin\Debug\net6.0\ToDo.staticwebassets.runtime.json
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\bin\Debug\net6.0\ToDo.exe
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\bin\Debug\net6.0\ToDo.deps.json
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\bin\Debug\net6.0\ToDo.runtimeconfig.json
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\bin\Debug\net6.0\ToDo.dll
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\bin\Debug\net6.0\ToDo.pdb
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\bin\Debug\net6.0\Microsoft.OpenApi.dll
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\obj\Debug\net6.0\staticwebassets.build.json
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\obj\Debug\net6.0\staticwebassets.development.json
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\obj\Debug\net6.0\scopedcss\bundle\ToDo.styles.css
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\obj\Debug\net6.0\ToDo.csproj.CopyComplete
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\obj\Debug\net6.0\ToDo.dll
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\obj\Debug\net6.0\refint\ToDo.dll
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\obj\Debug\net6.0\ToDo.pdb
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\obj\Debug\net6.0\ToDo.genruntimeconfig.cache
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\obj\Debug\net6.0\ref\ToDo.dll
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\bin\Debug\net6.0\Data\Task.json
+Z:\B\בניהו שושנה\‏‏תיקיה חדשה\core\ToDo\bin\Debug\net6.0\Data\Users.json
+F:\core מעודכן\core\ToDo\bin\Debug\net6.0\appsettings.Development.json
+F:\core מעודכן\core\ToDo\bin\Debug\net6.0\appsettings.json
+F:\core מעודכן\core\ToDo\bin\Debug\net6.0\Data\Task.json
+F:\core מעודכן\core\ToDo\bin\Debug\net6.0\Data\Users.json
+F:\core מעודכן\core\ToDo\bin\Debug\net6.0\ToDo.staticwebassets.runtime.json
+F:\core מעודכן\core\ToDo\bin\Debug\net6.0\ToDo.exe
+F:\core מעודכן\core\ToDo\bin\Debug\net6.0\ToDo.deps.json
+F:\core מעודכן\core\ToDo\bin\Debug\net6.0\ToDo.runtimeconfig.json
+F:\core מעודכן\core\ToDo\bin\Debug\net6.0\ToDo.dll
+F:\core מעודכן\core\ToDo\bin\Debug\net6.0\ToDo.pdb
+F:\core מעודכן\core\ToDo\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\core מעודכן\core\ToDo\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\core מעודכן\core\ToDo\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+F:\core מעודכן\core\ToDo\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+F:\core מעודכן\core\ToDo\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\core מעודכן\core\ToDo\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+F:\core מעודכן\core\ToDo\bin\Debug\net6.0\Microsoft.OpenApi.dll
+F:\core מעודכן\core\ToDo\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\core מעודכן\core\ToDo\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\core מעודכן\core\ToDo\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\core מעודכן\core\ToDo\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+F:\core מעודכן\core\ToDo\obj\Debug\net6.0\ToDo.csproj.AssemblyReference.cache
+F:\core מעודכן\core\ToDo\obj\Debug\net6.0\ToDo.GeneratedMSBuildEditorConfig.editorconfig
+F:\core מעודכן\core\ToDo\obj\Debug\net6.0\ToDo.AssemblyInfoInputs.cache
+F:\core מעודכן\core\ToDo\obj\Debug\net6.0\ToDo.AssemblyInfo.cs
+F:\core מעודכן\core\ToDo\obj\Debug\net6.0\ToDo.csproj.CoreCompileInputs.cache
+F:\core מעודכן\core\ToDo\obj\Debug\net6.0\ToDo.MvcApplicationPartsAssemblyInfo.cs
+F:\core מעודכן\core\ToDo\obj\Debug\net6.0\ToDo.MvcApplicationPartsAssemblyInfo.cache
+F:\core מעודכן\core\ToDo\obj\Debug\net6.0\staticwebassets.build.json
+F:\core מעודכן\core\ToDo\obj\Debug\net6.0\staticwebassets.development.json
+F:\core מעודכן\core\ToDo\obj\Debug\net6.0\scopedcss\bundle\ToDo.styles.css
+F:\core מעודכן\core\ToDo\obj\Debug\net6.0\ToDo.csproj.CopyComplete
+F:\core מעודכן\core\ToDo\obj\Debug\net6.0\ToDo.dll
+F:\core מעודכן\core\ToDo\obj\Debug\net6.0\refint\ToDo.dll
+F:\core מעודכן\core\ToDo\obj\Debug\net6.0\ToDo.pdb
+F:\core מעודכן\core\ToDo\obj\Debug\net6.0\ToDo.genruntimeconfig.cache
+F:\core מעודכן\core\ToDo\obj\Debug\net6.0\ref\ToDo.dll
