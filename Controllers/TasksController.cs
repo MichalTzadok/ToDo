@@ -16,9 +16,9 @@ using Microsoft.AspNetCore.Authorization;
 
         private readonly int userId;
 
-       public TasksController(ITaskService taskService/*,IHttpContextAccessor httpContextAccessor*/)
+       public TasksController(ITaskService taskService,IHttpContextAccessor httpContextAccessor)
        {   
-        //  this.userId = int.Parse(httpContextAccessor?.HttpContext?.User?.FindFirst("Id")?.Value);
+         this.userId = int.Parse(httpContextAccessor?.HttpContext?.User?.FindFirst("id")?.Value);
            this.TaskService = taskService;
 
        }
@@ -28,11 +28,23 @@ using Microsoft.AspNetCore.Authorization;
                TaskService.GetAll();
 
 
-       [HttpGet("{id}")]
+       [HttpGet]
+       [Route("GetById")]
        [Authorize(Policy = "User")]
+       public ActionResult<task> GetById()
+       {           
+
+           var task = TaskService.GetById(userId);
+
+           if (task == null)
+               return NotFound();
+
+           return task;
+       }
+        [HttpGet("{id}")]
+        [Authorize(Policy = "Admin")]
        public ActionResult<task> GetById(int id)
        {           
-        System.Console.WriteLine(userId);
 
            var task = TaskService.GetById(id);
 
@@ -42,6 +54,7 @@ using Microsoft.AspNetCore.Authorization;
            return task;
        }
 
+ 
        [HttpPost]
               [Authorize(Policy = "User")]
 

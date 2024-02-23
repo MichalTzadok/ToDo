@@ -31,7 +31,7 @@ public TaskService(IWebHostEnvironment webHost)
 
    public  task GetById(int id) 
    {
-       return tasks.FirstOrDefault(p => p.Id == id);
+       return tasks.FirstOrDefault(p => p.UserId == id);
    }
 
     public void Add(task task)
