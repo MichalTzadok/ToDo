@@ -7,11 +7,11 @@ namespace ToDo.Interfaces;
 public  interface ITaskService
 {
 
-    List<task> GetAll() ;
+    List<task> GetAll(int id) ;
 
      task GetById(int id) ;
 
-     void Add(task newTask);
+     void Add(task newTask,int userId);
   
      void Update(task newTask);
      void Delete(int id);

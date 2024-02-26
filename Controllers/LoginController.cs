@@ -35,10 +35,13 @@ namespace ToDo.Controllers{
               if(getUser.IsAdmin)
                       {claims.Add(new Claim("type", "Admin"));
                       claims.Add(new Claim("id", getUser.Id.ToString()));
+                       claims.Add(new Claim("type", "User"));
+
                       }
               else{
               claims.Add(new Claim("type", "User"));
               claims.Add(new Claim("id", getUser.Id.ToString()));
+
 
         }
                      var token = TokenService.GetToken(claims);

@@ -22,50 +22,40 @@ using Microsoft.AspNetCore.Authorization;
            this.TaskService = taskService;
 
        }
-       [HttpGet]
-       [Authorize(Policy = "Admin")]
-       public ActionResult<List<task>> GetAll() =>
-               TaskService.GetAll();
+    
+      [HttpGet]
+        [Authorize(Policy = "User")]
+        public ActionResult<List<task>>  GetAll()
+        {
+            return TaskService.GetAll(userId);
+        }
 
-
-       [HttpGet]
-       [Route("GetById")]
-       [Authorize(Policy = "User")]
-       public ActionResult<task> GetById()
-       {           
-
-           var task = TaskService.GetById(userId);
-
-           if (task == null)
-               return NotFound();
-
-           return task;
-       }
         [HttpGet("{id}")]
-        [Authorize(Policy = "Admin")]
-       public ActionResult<task> GetById(int id)
-       {           
+       [Authorize(Policy = "User")]
+        public ActionResult<task> GetById(int id)
+        {
+            var task = TaskService.GetById( id);
+            if (task == null)
+                return NotFound();
 
-           var task = TaskService.GetById(id);
+            return task;
+        }
+        
 
-           if (task == null)
-               return NotFound();
-
-           return task;
-       }
-
+      
  
        [HttpPost]
-              [Authorize(Policy = "User")]
-
+       [Authorize(Policy = "User")]
        public IActionResult Create(task task)
        {
-           TaskService.Add(task);
+           TaskService.Add(task,userId);
            return CreatedAtAction(nameof(Create), new { id = task.Id }, task);
 
        }
+   
 
        [HttpPut("{id}")]
+       [Authorize(Policy = "User")]
        public IActionResult Update(int id, task task)
        {
            if (id != task.Id)
@@ -81,10 +71,11 @@ using Microsoft.AspNetCore.Authorization;
        }
 
        [HttpDelete("{id}")]
+        [Authorize(Policy = "User")]
        public IActionResult Delete(int id)
        {
-           var pizza = TaskService.GetById(id);
-           if (pizza is null)
+           var task = TaskService.GetById(id);
+           if (task is null)
                return NotFound();
 
            TaskService.Delete(id);

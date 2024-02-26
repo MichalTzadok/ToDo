@@ -27,16 +27,12 @@ public TaskService(IWebHostEnvironment webHost)
        }
     
 
-   public List<task> GetAll() => tasks;
-
-   public  task GetById(int id) 
-   {
-       return tasks.FirstOrDefault(p => p.UserId == id);
-   }
-
-    public void Add(task task)
+      public List<task> GetAll(int id) => tasks.Where(p => p.UserId == id).ToList();
+        public task? GetById(int id) => tasks.FirstOrDefault(p => p.Id == id);
+    public void Add(task task,int userId)
        {
            task.Id = tasks.Count()+1;
+           task.UserId=userId;
            tasks.Add(task);
            saveToFile();
        }
@@ -61,6 +57,5 @@ public TaskService(IWebHostEnvironment webHost)
            saveToFile();
        }
 
-       public int Count => tasks.Count();
    }
 
