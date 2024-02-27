@@ -1,13 +1,14 @@
 using ToDo.Services;
-using ToDo.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using ToDo.Interfaces;
 using Microsoft.AspNetCore.Authorization;
+using System;
 
 
 
 namespace ToDo.Controllers{
+using ToDo.Models;
 
     [ApiController]
     [Route("[controller]")]
@@ -20,7 +21,6 @@ namespace ToDo.Controllers{
          }
 
         [HttpPost]
-        [Route("[action]")]
         public ActionResult<String> Login([FromBody] User User)
         {
 

@@ -109,3 +109,40 @@ C:\Users\huser\ToDo\obj\Debug\net6.0\refint\ToDo.dll
 C:\Users\huser\ToDo\obj\Debug\net6.0\ToDo.pdb
 C:\Users\huser\ToDo\obj\Debug\net6.0\ToDo.genruntimeconfig.cache
 C:\Users\huser\ToDo\obj\Debug\net6.0\ref\ToDo.dll
+F:\React\שיעורי בית\lesson2\ToDo\bin\Debug\net6.0\appsettings.Development.json
+F:\React\שיעורי בית\lesson2\ToDo\bin\Debug\net6.0\appsettings.json
+F:\React\שיעורי בית\lesson2\ToDo\bin\Debug\net6.0\Data\Task.json
+F:\React\שיעורי בית\lesson2\ToDo\bin\Debug\net6.0\Data\Users.json
+F:\React\שיעורי בית\lesson2\ToDo\bin\Debug\net6.0\ToDo.staticwebassets.runtime.json
+F:\React\שיעורי בית\lesson2\ToDo\bin\Debug\net6.0\ToDo.exe
+F:\React\שיעורי בית\lesson2\ToDo\bin\Debug\net6.0\ToDo.deps.json
+F:\React\שיעורי בית\lesson2\ToDo\bin\Debug\net6.0\ToDo.runtimeconfig.json
+F:\React\שיעורי בית\lesson2\ToDo\bin\Debug\net6.0\ToDo.dll
+F:\React\שיעורי בית\lesson2\ToDo\bin\Debug\net6.0\ToDo.pdb
+F:\React\שיעורי בית\lesson2\ToDo\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\React\שיעורי בית\lesson2\ToDo\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\React\שיעורי בית\lesson2\ToDo\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+F:\React\שיעורי בית\lesson2\ToDo\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+F:\React\שיעורי בית\lesson2\ToDo\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\React\שיעורי בית\lesson2\ToDo\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+F:\React\שיעורי בית\lesson2\ToDo\bin\Debug\net6.0\Microsoft.OpenApi.dll
+F:\React\שיעורי בית\lesson2\ToDo\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\React\שיעורי בית\lesson2\ToDo\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\React\שיעורי בית\lesson2\ToDo\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\React\שיעורי בית\lesson2\ToDo\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+F:\React\שיעורי בית\lesson2\ToDo\obj\Debug\net6.0\ToDo.csproj.AssemblyReference.cache
+F:\React\שיעורי בית\lesson2\ToDo\obj\Debug\net6.0\ToDo.GeneratedMSBuildEditorConfig.editorconfig
+F:\React\שיעורי בית\lesson2\ToDo\obj\Debug\net6.0\ToDo.AssemblyInfoInputs.cache
+F:\React\שיעורי בית\lesson2\ToDo\obj\Debug\net6.0\ToDo.AssemblyInfo.cs
+F:\React\שיעורי בית\lesson2\ToDo\obj\Debug\net6.0\ToDo.csproj.CoreCompileInputs.cache
+F:\React\שיעורי בית\lesson2\ToDo\obj\Debug\net6.0\ToDo.MvcApplicationPartsAssemblyInfo.cs
+F:\React\שיעורי בית\lesson2\ToDo\obj\Debug\net6.0\ToDo.MvcApplicationPartsAssemblyInfo.cache
+F:\React\שיעורי בית\lesson2\ToDo\obj\Debug\net6.0\staticwebassets.build.json
+F:\React\שיעורי בית\lesson2\ToDo\obj\Debug\net6.0\staticwebassets.development.json
+F:\React\שיעורי בית\lesson2\ToDo\obj\Debug\net6.0\scopedcss\bundle\ToDo.styles.css
+F:\React\שיעורי בית\lesson2\ToDo\obj\Debug\net6.0\ToDo.csproj.CopyComplete
+F:\React\שיעורי בית\lesson2\ToDo\obj\Debug\net6.0\ToDo.dll
+F:\React\שיעורי בית\lesson2\ToDo\obj\Debug\net6.0\refint\ToDo.dll
+F:\React\שיעורי בית\lesson2\ToDo\obj\Debug\net6.0\ToDo.pdb
+F:\React\שיעורי בית\lesson2\ToDo\obj\Debug\net6.0\ToDo.genruntimeconfig.cache
+F:\React\שיעורי בית\lesson2\ToDo\obj\Debug\net6.0\ref\ToDo.dll
