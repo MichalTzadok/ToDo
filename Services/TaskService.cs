@@ -53,7 +53,9 @@ public TaskService(IWebHostEnvironment webHost)
            if (index == -1)
                return;
 
-           tasks[index] = task;
+           tasks[index].Name = task.Name;
+            tasks[index].IsDone= task.IsDone;
+
            saveToFile();
        }
 

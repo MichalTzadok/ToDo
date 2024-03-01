@@ -25,9 +25,9 @@ function login() {
                 alert("not exist!!")
             } else {
                 token = result;
-                sessionStorage.setItem("name", name);
-                sessionStorage.setItem("password", password);
-                sessionStorage.setItem("token", token)
+                localStorage.setItem("name", name);
+                localStorage.setItem("password", password);
+                localStorage.setItem("token", token)
                 location.href = "./html/task.html";
 
             }

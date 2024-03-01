@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "h5nHuurOfM9fdcTh4TnbNjoRCnESOfflJOF1l6B1Q+U=",
+  "Hash": "4k1NdKActPjJ0WW6ZySPYmkIiWBrc6fMM42chSiUBxs=",
   "Source": "ToDo",
   "BasePath": "_content/ToDo",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "ToDo\\wwwroot",
       "Source": "ToDo",
-      "ContentRoot": "F:\\React\\שיעורי בית\\lesson2\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\huser\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "F:\\React\\שיעורי בית\\lesson2\\ToDo\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\huser\\ToDo\\wwwroot\\css\\site.css",
       "SourceId": "ToDo",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\React\\שיעורי בית\\lesson2\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\huser\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "F:\\React\\שיעורי בית\\lesson2\\ToDo\\wwwroot\\html\\index.html",
+      "Identity": "C:\\Users\\huser\\ToDo\\wwwroot\\html\\index.html",
       "SourceId": "ToDo",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\React\\שיעורי בית\\lesson2\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\huser\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "RelativePath": "html/index.html",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\html\\index.html"
     },
     {
-      "Identity": "F:\\React\\שיעורי בית\\lesson2\\ToDo\\wwwroot\\html\\login.html",
+      "Identity": "C:\\Users\\huser\\ToDo\\wwwroot\\html\\login.html",
       "SourceId": "ToDo",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\React\\שיעורי בית\\lesson2\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\huser\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "RelativePath": "html/login.html",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\html\\login.html"
     },
     {
-      "Identity": "F:\\React\\שיעורי בית\\lesson2\\ToDo\\wwwroot\\html\\task.html",
+      "Identity": "C:\\Users\\huser\\ToDo\\wwwroot\\html\\task.html",
       "SourceId": "ToDo",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\React\\שיעורי בית\\lesson2\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\huser\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "RelativePath": "html/task.html",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\html\\task.html"
     },
     {
-      "Identity": "F:\\React\\שיעורי בית\\lesson2\\ToDo\\wwwroot\\html\\user.html",
+      "Identity": "C:\\Users\\huser\\ToDo\\wwwroot\\html\\user.html",
       "SourceId": "ToDo",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\React\\שיעורי בית\\lesson2\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\huser\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "RelativePath": "html/user.html",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\html\\user.html"
     },
     {
-      "Identity": "F:\\React\\שיעורי בית\\lesson2\\ToDo\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\huser\\ToDo\\wwwroot\\index.html",
       "SourceId": "ToDo",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\React\\שיעורי בית\\lesson2\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\huser\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "F:\\React\\שיעורי בית\\lesson2\\ToDo\\wwwroot\\js\\login.js",
+      "Identity": "C:\\Users\\huser\\ToDo\\wwwroot\\js\\login.js",
       "SourceId": "ToDo",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\React\\שיעורי בית\\lesson2\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\huser\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "RelativePath": "js/login.js",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\js\\login.js"
     },
     {
-      "Identity": "F:\\React\\שיעורי בית\\lesson2\\ToDo\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\huser\\ToDo\\wwwroot\\js\\site.js",
       "SourceId": "ToDo",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\React\\שיעורי בית\\lesson2\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\huser\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "F:\\React\\שיעורי בית\\lesson2\\ToDo\\wwwroot\\js\\task.js",
+      "Identity": "C:\\Users\\huser\\ToDo\\wwwroot\\js\\task.js",
       "SourceId": "ToDo",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\React\\שיעורי בית\\lesson2\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\huser\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "RelativePath": "js/task.js",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\js\\task.js"
     },
     {
-      "Identity": "F:\\React\\שיעורי בית\\lesson2\\ToDo\\wwwroot\\js\\user.js",
+      "Identity": "C:\\Users\\huser\\ToDo\\wwwroot\\js\\user.js",
       "SourceId": "ToDo",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\React\\שיעורי בית\\lesson2\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\huser\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "RelativePath": "js/user.js",
       "AssetKind": "All",
