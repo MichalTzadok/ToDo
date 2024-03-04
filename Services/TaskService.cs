@@ -31,7 +31,7 @@ public TaskService(IWebHostEnvironment webHost)
         public task? GetById(int id) => tasks.FirstOrDefault(p => p.Id == id);
     public void Add(task task,int userId)
        {
-           task.Id = tasks.Count()+1;
+           task.Id = tasks.Max(t=>t.Id)+1;
            task.UserId=userId;
            tasks.Add(task);
            saveToFile();

@@ -10,6 +10,8 @@ using Microsoft.AspNetCore.Authorization;
 
     [ApiController]
     [Route("[controller]")]
+     [Authorize(Policy = "User")]
+
     public class ToDoController : ControllerBase
     {
       readonly ITaskService TaskService;
@@ -24,14 +26,12 @@ using Microsoft.AspNetCore.Authorization;
        }
     
       [HttpGet]
-        [Authorize(Policy = "User")]
         public ActionResult<List<task>>  GetAll()
         {
             return TaskService.GetAll(userId);
         }
 
         [HttpGet("{id}")]
-       [Authorize(Policy = "User")]
         public ActionResult<task> GetById(int id)
         {
             var task = TaskService.GetById( id);
@@ -45,7 +45,6 @@ using Microsoft.AspNetCore.Authorization;
       
  
        [HttpPost]
-       [Authorize(Policy = "User")]
        public IActionResult Create(task task)
        {
            TaskService.Add(task,userId);
@@ -55,7 +54,6 @@ using Microsoft.AspNetCore.Authorization;
    
 
        [HttpPut("{id}")]
-       [Authorize(Policy = "User")]
        public IActionResult Update(int id, task task)
        {
            if (id != task.Id)
@@ -71,7 +69,6 @@ using Microsoft.AspNetCore.Authorization;
        }
 
        [HttpDelete("{id}")]
-        [Authorize(Policy = "User")]
        public IActionResult Delete(int id)
        {
            var task = TaskService.GetById(id);

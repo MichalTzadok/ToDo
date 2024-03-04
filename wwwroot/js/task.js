@@ -62,9 +62,21 @@ function addItem() {
                 .catch(error => console.error('Unable to update item.', error));
         
             closeInput();
-        
             return false;
         }
+        function deleteItem(id) {
+            var headers = new Headers();
+            headers.append("Authorization", "Bearer " + token);
+            headers.append("Content-Type", "application/json");
+                fetch(`${uri}/${id}`, {
+                        method: 'DELETE',
+                        headers:headers,
+
+                    })
+                    .then(() => getItems())
+                    .catch(error => console.error('Unable to delete item.', error));
+            }
+            
         function closeInput() {
                 document.getElementById('editForm').style.display = 'none';
             }
