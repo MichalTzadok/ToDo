@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "B7PKza9xbtyc0ZpgGscl1+eZmvViknAHrMETUPgVfkI=",
+  "Hash": "xmYBNm7rGjjuFliYbZlPU2+wmzaCSxz3JkwCzLDI+rI=",
   "Source": "ToDo",
   "BasePath": "_content/ToDo",
   "Mode": "Default",
@@ -53,25 +53,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\html\\index.html"
-    },
-    {
-      "Identity": "C:\\Users\\huser\\ToDo\\wwwroot\\html\\login.html",
-      "SourceId": "ToDo",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\huser\\ToDo\\wwwroot\\",
-      "BasePath": "_content/ToDo",
-      "RelativePath": "html/login.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\html\\login.html"
     },
     {
       "Identity": "C:\\Users\\huser\\ToDo\\wwwroot\\html\\task.html",

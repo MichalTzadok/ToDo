@@ -9,10 +9,6 @@
       "PackagePath": "staticwebassets\\html\\index.html"
     },
     {
-      "Id": "C:\\Users\\huser\\ToDo\\wwwroot\\html\\login.html",
-      "PackagePath": "staticwebassets\\html\\login.html"
-    },
-    {
       "Id": "C:\\Users\\huser\\ToDo\\wwwroot\\html\\task.html",
       "PackagePath": "staticwebassets\\html\\task.html"
     },

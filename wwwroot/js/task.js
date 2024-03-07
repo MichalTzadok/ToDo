@@ -16,7 +16,32 @@ function getItems() {
         .then(response => response.json())
         .then(data => _displayItems(data))
         .catch(error => console.error('Unable to get items.', error));
+        
 }
+function showUserLink(){
+//     var headers = new Headers();
+//     headers.append("Authorization", "Bearer " + token);
+//     headers.append("Content-Type", "application/json");
+//     var requestOptions = {
+//         method: 'GET',
+//         headers: headers,
+//         redirect: 'follow'
+//     };
+
+//     fetch('/users',requestOptions)
+//     .then((response) => response.text())
+//     .then((result) => {
+//         if (result.includes("200")) {
+//             let usersLink=document.createElement('a');
+//             usersLink.href="../html/users.html";
+//             usersLink.innerHTML="users";
+// const r=Document.getElementById("oo");
+// r.appendChild(usersLink);
+            
+
+//         }})
+//         .catch(error => console.error('Unable to get items.', error));
+} 
 function addItem() {
         const addNameTextbox = document.getElementById('add-name');
         const item = {
