@@ -19,28 +19,19 @@ function getItems() {
         
 }
 function showUserLink(){
-//     var headers = new Headers();
-//     headers.append("Authorization", "Bearer " + token);
-//     headers.append("Content-Type", "application/json");
-//     var requestOptions = {
-//         method: 'GET',
-//         headers: headers,
-//         redirect: 'follow'
-//     };
+    var headers = new Headers();
+    headers.append("Authorization", "Bearer " + token);
+    headers.append("Content-Type", "application/json");
+    var requestOptions = {
+        method: 'GET',
+        headers: headers,
+        redirect: 'follow'
+    };
 
-//     fetch('/users',requestOptions)
-//     .then((response) => response.text())
-//     .then((result) => {
-//         if (result.includes("200")) {
-//             let usersLink=document.createElement('a');
-//             usersLink.href="../html/users.html";
-//             usersLink.innerHTML="users";
-// const r=Document.getElementById("oo");
-// r.appendChild(usersLink);
-            
+    fetch('/users',requestOptions)
+        .then(response => {response.status===200? document.getElementById("usersLink").innerHTML="Link to users":console.log("unAouthorize"); })
+        // .catch(error => console.error('Unable .', error));
 
-//         }})
-//         .catch(error => console.error('Unable to get items.', error));
 } 
 function addItem() {
         const addNameTextbox = document.getElementById('add-name');

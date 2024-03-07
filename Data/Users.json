@@ -1,1 +1,1 @@
-[{"Id":2,"Name":"tt","Password":"ee","IsAdmin":false},{"Id":3,"Name":"c","Password":"c","IsAdmin":true},{"Id":4,"Name":"rht","Password":"treh","IsAdmin":true}]
+[{"Id":2,"Name":"a","Password":"a","IsAdmin":true},{"Id":3,"Name":"c","Password":"c","IsAdmin":false},{"Id":4,"Name":"rht","Password":"treh","IsAdmin":true}]
