@@ -18,6 +18,50 @@ function getItems() {
         .catch(error => console.error('Unable to get items.', error));
         
 }
+function addItem() {
+    const addIsAdminCheckbox = document.getElementById('add-isAdmin');
+    const addNameTextbox = document.getElementById('add-name');
+    const addPasswordTextbox = document.getElementById('add-password');
+
+    const item = {
+        isAdmin: addIsAdminCheckbox.checked,
+        name: addNameTextbox.value.trim(),
+        password:addPasswordTextbox.value.trim()
+    };
+    var headers = new Headers();
+    headers.append("Authorization", "Bearer " + token);
+    headers.append("Content-Type", "application/json");
+    var requestOptions = {
+        method: 'POST',
+        headers: headers,
+        redirect: 'follow',
+        body: JSON.stringify(item)
+
+    };
+    
+    fetch(uri, requestOptions)
+        .then(response => response.json())
+        .then(() => {
+            getItems();
+            addIsAdminCheckbox.checked=false
+            addNameTextbox.value = ''
+            addPasswordTextbox.value=''
+        })
+        .catch(error => console.error('Unable to add item.', error));
+}
+function deleteItem(id) {
+    var headers = new Headers();
+    headers.append("Authorization", "Bearer " + token);
+    headers.append("Content-Type", "application/json");
+        fetch(`${uri}/${id}`, {
+                method: 'DELETE',
+                headers:headers,
+
+            })
+            .then(() => getItems())
+            .catch(error => console.error('Unable to delete item.', error));
+    }
+
 function _displayCount(itemCount) {
     const name = (itemCount === 1) ? 'user' : 'user kinds';
 
@@ -52,9 +96,12 @@ function _displayItems(data) {
         let td2 = tr.insertCell(1);
         let textNode = document.createTextNode(item.name);
         td2.appendChild(textNode);
-
         let td3 = tr.insertCell(2);
-        td3.appendChild(editButton);
+        let passwordNode = document.createTextNode(item.password);
+        td3.appendChild(passwordNode);
+
+        // let td4 = tr.insertCell(3);
+        // td4.appendChild(editButton);
 
         let td4 = tr.insertCell(3);
         td4.appendChild(deleteButton);

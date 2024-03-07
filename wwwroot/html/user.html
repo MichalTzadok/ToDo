@@ -4,16 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/site.css" />
     <title>Document</title>
 </head>
 
 <body>
     <h1>Users CRUD</h1>
-    <!-- <h3>Add</h3> -->
-    <!-- <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
-        <input type="text" id="add-name" placeholder="New task">
+   <h3>Add</h3> 
+    <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+        <label>isAdmin</label>
+        <input type="checkbox" id="add-isAdmin" >
+        <input type="text" id="add-name" placeholder="Name">
+        <input type="password" id="add-password" placeholder="password" required>
         <input type="submit" value="Add">
-    </form> -->
+    </form> 
 
      <!-- <div id="editForm">
         <h3>Edit</h3>
