@@ -1,4 +1,5 @@
 const uri = '/ToDo';
+const uriOfCurrentUser='/users/currentUser'
 let tasks = [];
 const token = localStorage.getItem("token");
 var myHeaders = new Headers(); 
@@ -18,6 +19,7 @@ function getItems() {
         .catch(error => console.error('Unable to get items.', error));
         
 }
+const updateDetailsButton=document.get
 function showUserLink(){
     var headers = new Headers();
     headers.append("Authorization", "Bearer " + token);
@@ -77,9 +79,31 @@ function addItem() {
                 .then(() => getItems())
                 .catch(error => console.error('Unable to update item.', error));
         
-            closeInput();
+            closeEditInput();
             return false;
         }
+        function updateUserDetails() {
+            const userId = document.getElementById('update-id').value;
+            const item = {
+                id: parseInt(userId, 10),
+                name: document.getElementById('update-name').value.trim(),
+                password: document.getElementById('update-password').value.trim()
+            };
+            var headers = new Headers();
+            headers.append("Authorization", "Bearer " + token);
+            headers.append("Content-Type", "application/json");
+            fetch(`${uriOfCurrentUser}/${userId}`, {
+                    method: 'PUT',
+                    headers:headers,
+                    body: JSON.stringify(item)
+                })
+                .then(() => getItems())
+                .catch(error => console.error('Unable to update item.', error));
+        
+                closeUpdetInput();
+            return false;
+        }
+
         function deleteItem(id) {
             var headers = new Headers();
             headers.append("Authorization", "Bearer " + token);
@@ -93,22 +117,46 @@ function addItem() {
                     .catch(error => console.error('Unable to delete item.', error));
             }
             
-        function closeInput() {
+        function closeEditInput() {
                 document.getElementById('editForm').style.display = 'none';
+            }
+            function closeUpdetInput() {
+                document.getElementById('updateForm').style.display = 'none';
             }
 function _displayCount(itemCount) {
     const name = (itemCount === 1) ? 'task' : 'task kinds';
 
     document.getElementById('counter').innerText = `${itemCount} ${name}`;
 }
+function getUserId(){
+    var headers = new Headers();
+    headers.append("Authorization", "Bearer " + token);
+    headers.append("Content-Type", "application/json");
+    var requestOptions = {
+        method: 'GET',
+        headers: headers,
+        redirect: 'follow'
+    };
+
+    fetch(uriOfCurrentUser,requestOptions)
+        .then(response => response.json())
+        .then(data=>displayUpdeteForm(data))
+        .catch(error => console.error('Unable to get userId.', error));
+}
 function displayEditForm(id) {
         const item = tasks.find(item => item.id === id);
-    
         document.getElementById('edit-name').value = item.name;
         document.getElementById('edit-id').value = item.id;
         document.getElementById('edit-isDone').checked = item.isDone;
         document.getElementById('editForm').style.display = 'block';
     }
+    function displayUpdeteForm(user) {
+           
+        document.getElementById('update-name').value = user.name;
+        document.getElementById('update-password').value = user.password;
+        document.getElementById('updateForm').style.display = 'block';
+    }
+    
 function _displayItems(data) {
     const tBody = document.getElementById('tasks');
     tBody.innerHTML = '';
