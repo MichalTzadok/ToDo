@@ -161,12 +161,11 @@ function getUserId(){
 
     fetch(uriOfCurrentUser,requestOptions)
         .then(response => response.json())
-        .then(data=>console.log(data))
         .then(data=>displayUpdateForm(data))
         .catch(error => console.error('Unable to get userId.', error));
 }
 function displayUpdateForm(user) {
-    console.log(user);
+    console.log(user,document.getElementById('update-id').value,user.id);
     document.getElementById('update-id').value = user.id;   
     document.getElementById('update-name').value = user.name;
     document.getElementById('update-password').value = user.password;

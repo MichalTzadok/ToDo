@@ -119,3 +119,101 @@
 /login.POST took 106ms. User: unknown
 /ToDo.GET took 90ms. User: 2
 /users/currentUser.GET took 5ms. User: 2
+/favicon.ico.GET took 63ms. User: unknown
+/login.POST took 119ms. User: unknown
+/ToDo.GET took 57ms. User: 2
+/users/currentUser.GET took 1ms. User: 2
+/users.GET took 0ms. User: 2
+/users/currentUser.GET took 0ms. User: 2
+/users/currentUser.GET took 0ms. User: 2
+/users/currentUser.GET took 0ms. User: 2
+/ToDo.GET took 0ms. User: 2
+/users.GET took 0ms. User: 2
+/favicon.ico.GET took 0ms. User: unknown
+/users/currentUser.GET took 0ms. User: 2
+/users/currentUser.GET took 0ms. User: 2
+/users.GET took 0ms. User: 2
+/favicon.ico.GET took 0ms. User: unknown
+/users/currentUser.GET took 0ms. User: 2
+/users.GET took 1ms. User: 2
+/favicon.ico.GET took 0ms. User: unknown
+/users/currentUser.GET took 0ms. User: 2
+/ToDo.GET took 0ms. User: 2
+/favicon.ico.GET took 0ms. User: unknown
+/users/currentUser.GET took 0ms. User: 2
+/ToDo.GET took 0ms. User: 2
+/favicon.ico.GET took 0ms. User: unknown
+/users/currentUser.GET took 0ms. User: 2
+/users.GET took 0ms. User: 2
+/favicon.ico.GET took 0ms. User: unknown
+/users/currentUser.GET took 0ms. User: 2
+/users.GET took 0ms. User: 2
+/favicon.ico.GET took 0ms. User: unknown
+/users/currentUser.GET took 0ms. User: 2
+/favicon.ico.GET took 2ms. User: unknown
+/favicon.ico.GET took 0ms. User: unknown
+/favicon.ico.GET took 0ms. User: unknown
+/favicon.ico.GET took 0ms. User: unknown
+/login.POST took 0ms. User: unknown
+/login.OPTIONS took 0ms. User: unknown
+/favicon.ico.GET took 0ms. User: unknown
+/favicon.ico.GET took 0ms. User: unknown
+/login.POST took 0ms. User: unknown
+/login.OPTIONS took 0ms. User: unknown
+/favicon.ico.GET took 42ms. User: unknown
+/favicon.ico.GET took 0ms. User: unknown
+/login.POST took 89ms. User: unknown
+/ToDo.GET took 47ms. User: 2
+/users.GET took 47ms. User: 2
+/users/currentUser.GET took 1ms. User: 2
+/users.GET took 0ms. User: 2
+/favicon.ico.GET took 0ms. User: unknown
+/users/currentUser.GET took 0ms. User: 2
+/users.GET took 0ms. User: 2
+/favicon.ico.GET took 0ms. User: unknown
+/users/currentUser.GET took 0ms. User: 2
+/ToDo.GET took 0ms. User: 2
+/favicon.ico.GET took 0ms. User: unknown
+/users/currentUser.GET took 0ms. User: 2
+/users/currentUser.PUT took 3ms. User: 2
+/ToDo.GET took 0ms. User: 2
+/users/currentUser.GET took 0ms. User: 2
+/users.GET took 0ms. User: 2
+/users/4.DELETE took 3ms. User: 2
+/users.GET took 0ms. User: 2
+/login.POST took 1ms. User: unknown
+/login.POST took 0ms. User: unknown
+/ToDo.GET took 0ms. User: 2
+/users/currentUser.GET took 0ms. User: 2
+/users/currentUser.PUT took 0ms. User: 2
+/ToDo.GET took 0ms. User: 2
+/users/currentUser.GET took 0ms. User: 2
+/users/currentUser.PUT took 0ms. User: 2
+/ToDo.GET took 0ms. User: 2
+/login.POST took 120ms. User: unknown
+/users.GET took 57ms. User: 2
+/favicon.ico.GET took 65ms. User: unknown
+/login.POST took 88ms. User: unknown
+/ToDo.GET took 50ms. User: 2
+/users.GET took 50ms. User: 2
+/users/currentUser.GET took 1ms. User: 2
+/login.POST started at 2024-03-08 09:57:43.254
+/login.POST ended at 121 ms. UserId: unknown
+/ToDo.GET started at 2024-03-08 09:57:43.399
+/ToDo.GET ended at 65 ms. UserId: 2
+/login.POST started at 2024-03-08 09:58:38.227
+/login.POST ended at 122 ms. UserId: unknown
+/ToDo.GET started at 2024-03-08 09:58:38.372
+/ToDo.GET ended at 67 ms. UserId: 2
+/login.POST started at 2024-03-08 10:00:13.881
+/login.POST ended at 121 ms. UserId: unknown
+/users.GET started at 2024-03-08 10:00:14.031
+/users.GET ended at 62 ms. UserId: 2
+/login.POST started at 2024-03-08 10:02:17.474
+/login.POST ended at 122 ms. UserId: unknown
+/ToDo.GET started at 2024-03-08 10:02:17.633
+/ToDo.GET ended at 64 ms. UserId: 2
+/login.POST started at 2024-03-08 10:03:18.408
+/login.POST ended at 119 ms. UserId: unknown
+/ToDo.GET started at 2024-03-08 10:03:18.566
+/ToDo.GET ended at 59 ms. UserId: 2

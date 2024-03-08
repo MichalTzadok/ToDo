@@ -17,13 +17,15 @@ public class logMiddleware
     }
 
     public async Task Invoke(HttpContext c)
-    {
-        var sw = new Stopwatch();
-        sw.Start();
-        await next(c);
-        
-        WriteLogToFile($"{c.Request.Path}.{c.Request.Method} took {sw.ElapsedMilliseconds}ms."
-            + $" User: {c.User?.FindFirst("id")?.Value ?? "unknown"}");     
+    { var action = $"{c.Request.Path}.{c.Request.Method}";
+            var sw = new Stopwatch();
+            sw.Start();
+            WriteLogToFile($"{action} started at {DateTime.Now:yyyy-MM-dd HH:mm:ss.fff}");
+
+            await next(c);
+
+            WriteLogToFile( $"{action} ended at {sw.ElapsedMilliseconds} ms. UserId: {c.User?.FindFirst("id")?.Value ?? "unknown"}");
+          
     }    
 
 
