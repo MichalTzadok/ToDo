@@ -11,7 +11,7 @@ namespace ToDo.Controllers{
 public class usersController : ControllerBase
 {
       readonly IUserService UserService;
-              private readonly int userId;
+    private readonly int userId;
 
 
 public usersController(IUserService UserService,IHttpContextAccessor httpContextAccessor){
@@ -19,7 +19,12 @@ public usersController(IUserService UserService,IHttpContextAccessor httpContext
               this.userId = int.Parse(httpContextAccessor?.HttpContext?.User?.FindFirst("id")?.Value);
 
 }
+        [HttpGet]
+        [Route("currentUser")]
+        public ActionResult<User> getCurrentUser()=>
+             UserService.GetById(this.userId);
 
+        
 
       [HttpGet]
        [Authorize(Policy = "Admin")]
@@ -28,28 +33,14 @@ public usersController(IUserService UserService,IHttpContextAccessor httpContext
        
        [HttpGet("{id}")]
       [Authorize(Policy = "Admin")]
-        public ActionResult<User> GetById(int id)
-        {
-            var user = UserService.GetById(id);
-            if (user == null)
-                return NotFound();
-
-            return user;
-        }
-         [HttpGet]
-        [Route("currentUser")]
-        public ActionResult<User> getCurrentUser()
-        {
-            var user = UserService.GetById(userId);
-            if (user == null)
-                return NotFound();
-
-            return user;
-        }
-    [HttpPut]    
+        public ActionResult<User> GetById(int id)=>UserService.GetById(id);
+        
+       
+    [HttpPut]  
+    [Route("currentUser")]
        public IActionResult updateCurrentUser(User user)
        {
-          if(userId!=user.Id)
+          if(this.userId!=user.Id)
           return BadRequest();
            UserService.Update(user);
 
@@ -78,16 +69,5 @@ public usersController(IUserService UserService,IHttpContextAccessor httpContext
 
        }
 
-    //     [HttpPost]
-    //     [Route("[action]")]
-    //     [Authorize(Policy = "Admin")]
-    //     public IActionResult Create([FromBody] User User)
-    //     {
-          
-    //        UserService.Add(User);
-    //        return CreatedAtAction(nameof(Create), new { id = User.Id }, User);
-
-       
-    //     }  
-
+    
 }}

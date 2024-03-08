@@ -13,7 +13,7 @@
     <h3>Add</h3>
     <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
         <input type="text" id="add-name" placeholder="New task">
-        <input type="submit" value="Add">
+        <button type="submit" >Add</button>
     </form>
 
     <div id="editForm">
@@ -22,7 +22,7 @@
             <input type="hidden" id="edit-id">
             <input type="checkbox" id="edit-isDone">
             <input type="text" id="edit-name"> 
-            <input type="submit" value="Save">
+            <button type="submit" >Save</button>
             <a onclick="closeEditInput()" aria-label="Close">&#10006;</a>
         </form>
     </div>
@@ -38,19 +38,22 @@
         </tr>
         <tbody id="tasks"></tbody>
     </table>
-    <button onclick="getUserId()">updete your details</button>
+
+
+    <button onclick="getUserId()">Updete your details</button>
     <div id="updateForm">
         <h3>Edit your details:</h3>
         <form action="javascript:void(0);" onsubmit="updateUserDetails()">
+            <input type="hidden" id="update-id">
             <input type="password" id="updete-password" >
             <input type="text" id="updete-name"> 
-            <input type="submit" value="Save">
-            <a onclick="closeUpdetInput()" aria-label="Close">&#10006;</a>
+            <button type="submit" >Save</button>
+            <a onclick="closeUpdateInput()" aria-label="Close">&#10006;</a>
         </form>
     </div>
+
     <a id="usersLink" href="../html/user.html"></a>
 
-    <!-- <script src="js/site.js" asp-append-version="true"></script> -->
     
     </body>
     <script src="../js/task.js"  asp-append-version="true"></script>

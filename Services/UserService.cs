@@ -31,22 +31,10 @@ public UserService(IWebHostEnvironment webHost)
 
    public  List<User> GetAll() => users;
 
-   
-   
-
-   
-
-    //    public  User GetById(int id) 
-    //    {
-    //        return users.FirstOrDefault(p => p.Id == id);
-    //    }
-        public User? GetById(int id) => users.FirstOrDefault(p => p.Id == id);
-    // public void Add(User User)
-    //    {
-    //        User.Id = users.Count()+1;
-    //        users.Add(User);
-    //        saveToFile();
-    //    }
+        public User GetById(int id) {
+            return users.FirstOrDefault(p => p.Id == id);
+            }
+    
 
 public void Delete(int id)
        {
@@ -74,17 +62,6 @@ public void Delete(int id)
            users.Add(user);
            saveToFile();
        }
-    //    public void AdminUpdate(User User)
-    //    {
-    //        var index = users.FindIndex(p => p.Id == User.Id);
-    //        if (index == -1)
-    //            return;
-
-    //        users[index].Name = User.Name;
-    //         users[index].Password = User.Password;
-
-    //        saveToFile();
-    //    }
-
+    
 }
 
