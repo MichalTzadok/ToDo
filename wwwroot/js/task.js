@@ -29,7 +29,7 @@ function showUserLink(){
     };
 
     fetch('/users',requestOptions)
-        .then(response => {response.status===200? document.getElementById("usersLink").innerHTML="Link to users":console.log("unAouthorize"); })
+        .then(response => {response.status==200? document.getElementById("usersLink").innerHTML="Link to users":console.log("unAouthorize"); })
 
 } 
 
@@ -61,6 +61,7 @@ function addItem() {
     function displayEditForm(id) {
         const item = tasks.find(item => item.id === id);
         document.getElementById('edit-name').value = item.name;
+        console.log( item.name);
         document.getElementById('edit-id').value = item.id;
         document.getElementById('edit-isDone').checked = item.isDone;
         document.getElementById('editForm').style.display = 'block';

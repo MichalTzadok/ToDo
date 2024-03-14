@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Q7IfG0LzXTj3u2YJGSYT0Evjnt/66uw++KP5vUchxJA=",
+  "Hash": "cJjIuRNpmv6QeTCu12fPkbEJYOl/TzoLsK4NGaQdcqY=",
   "Source": "ToDo",
   "BasePath": "_content/ToDo",
   "Mode": "Default",
@@ -32,23 +32,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
-    },
-    {
-      "Identity": "C:\\Users\\The user\\ToDo\\wwwroot\\html\\index.html",
-      "SourceId": "ToDo",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\The user\\ToDo\\wwwroot\\",
-      "BasePath": "_content/ToDo",
-      "RelativePath": "html/index.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\html\\index.html"
     },
     {
       "Identity": "C:\\Users\\The user\\ToDo\\wwwroot\\html\\task.html",
@@ -117,23 +100,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\login.js"
-    },
-    {
-      "Identity": "C:\\Users\\The user\\ToDo\\wwwroot\\js\\site.js",
-      "SourceId": "ToDo",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\The user\\ToDo\\wwwroot\\",
-      "BasePath": "_content/ToDo",
-      "RelativePath": "js/site.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
       "Identity": "C:\\Users\\The user\\ToDo\\wwwroot\\js\\task.js",

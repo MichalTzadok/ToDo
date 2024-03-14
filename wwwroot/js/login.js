@@ -1,4 +1,13 @@
 const uri = '/login';
+function check() {
+   let token = localStorage.getItem('token');
+    if (token != null) {
+        location.href = "./html/task.html";
+    }
+   
+}
+
+
 function login() {
     var headers = new Headers();
     const name = document.getElementById('name').value.trim();
