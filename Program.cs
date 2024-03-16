@@ -67,6 +67,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 var app = builder.Build();
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
 //js
 app.UseDefaultFiles();
@@ -78,17 +83,10 @@ app.UselogMiddleware("file.log");
 
 // Configure the HTTP request pipeline.
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
 
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
+app.UseRouting();
 
-
-app.UseDefaultFiles();
-app.UseStaticFiles();
 
 //auth5
 app.UseAuthentication();

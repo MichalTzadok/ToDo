@@ -200,6 +200,10 @@ function displayUpdateForm(user) {
             function closeUpdateInput() {
                 document.getElementById('updateForm').style.display = 'none';
             }
+            function changeUser(){
+                sessionStorage.setItem("changeUser",true);
+                location.href = "../index.html";
+            }
 
 
    

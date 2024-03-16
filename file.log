@@ -328,3 +328,132 @@
 /users.GET ended at 8 ms. UserId: unknown
 /users.GET started at 2024-03-14 20:08:06.818
 /users.GET ended at 58 ms. UserId: unknown
+/favicon.ico.GET started at 2024-03-16 23:48:17.454
+/favicon.ico.GET ended at 141 ms. UserId: unknown
+/login.POST started at 2024-03-16 23:48:33.323
+/login.POST ended at 174 ms. UserId: unknown
+/users.GET started at 2024-03-16 23:48:33.623
+/users.GET ended at 101 ms. UserId: 0
+/favicon.ico.GET started at 2024-03-16 23:48:51.676
+/favicon.ico.GET ended at 3 ms. UserId: unknown
+/login.POST started at 2024-03-16 23:48:57.605
+/login.POST ended at 4 ms. UserId: unknown
+/ToDo.GET started at 2024-03-16 23:48:57.686
+/ToDo.GET ended at 13 ms. UserId: 0
+/users/currentUser.GET started at 2024-03-16 23:49:06.244
+/users/currentUser.GET ended at 374 ms. UserId: 0
+/login.POST started at 2024-03-16 23:50:04.717
+/login.POST ended at 12 ms. UserId: unknown
+/ToDo.GET started at 2024-03-16 23:50:04.790
+/ToDo.GET ended at 3 ms. UserId: 1
+/users.GET started at 2024-03-16 23:50:04.797
+/users.GET ended at 6 ms. UserId: 1
+/users/currentUser.GET started at 2024-03-16 23:50:11.790
+/users/currentUser.GET ended at 3 ms. UserId: 1
+/login.POST started at 2024-03-16 23:50:35.406
+/login.POST ended at 4 ms. UserId: unknown
+/ToDo.GET started at 2024-03-16 23:50:35.471
+/users.GET started at 2024-03-16 23:50:35.480
+/ToDo.GET ended at 10 ms. UserId: 0
+/users.GET ended at 4 ms. UserId: 0
+/users/currentUser.GET started at 2024-03-16 23:50:43.253
+/users/currentUser.GET ended at 22 ms. UserId: 0
+/html/tasks.html.GET started at 2024-03-16 23:54:27.574
+/html/tasks.html.GET ended at 92 ms. UserId: unknown
+/html/tasks.html.GET started at 2024-03-16 23:54:34.433
+/html/tasks.html.GET ended at 5 ms. UserId: unknown
+/html/tasks.html.GET started at 2024-03-16 23:54:34.810
+/html/tasks.html.GET ended at 9 ms. UserId: unknown
+/html/tasks.html.GET started at 2024-03-16 23:54:37.207
+/html/tasks.html.GET ended at 3 ms. UserId: unknown
+/html.GET started at 2024-03-16 23:54:43.601
+/html.GET ended at 4 ms. UserId: unknown
+/html/tasks.html.GET started at 2024-03-16 23:54:56.679
+/html/tasks.html.GET ended at 920 ms. UserId: unknown
+/html/tasks.html.GET started at 2024-03-16 23:55:43.783
+/html/tasks.html.GET ended at 3 ms. UserId: unknown
+/html/tasks.html.GET started at 2024-03-16 23:55:44.678
+/html/tasks.html.GET ended at 3 ms. UserId: unknown
+/html/tasks.html.GET started at 2024-03-16 23:56:41.793
+/html/tasks.html.GET ended at 2 ms. UserId: unknown
+/html/tasks.html.GET started at 2024-03-16 23:57:28.416
+/html/tasks.html.GET ended at 99 ms. UserId: unknown
+/html/tasks.html.GET started at 2024-03-16 23:57:37.497
+/html/tasks.html.GET ended at 5 ms. UserId: unknown
+/html/tasks.html.GET started at 2024-03-16 23:57:38.297
+/html/tasks.html.GET ended at 4 ms. UserId: unknown
+/html/tasks.html.GET started at 2024-03-16 23:57:38.660
+/html/tasks.html.GET ended at 2 ms. UserId: unknown
+/html/tasks.html.GET started at 2024-03-16 23:57:38.820
+/html/tasks.html.GET ended at 6 ms. UserId: unknown
+/html/tasks.html.GET started at 2024-03-16 23:57:39.033
+/html/tasks.html.GET ended at 3 ms. UserId: unknown
+/html/tasks.html.GET started at 2024-03-16 23:57:39.306
+/html/tasks.html.GET ended at 3 ms. UserId: unknown
+/html/tasks.html.GET started at 2024-03-16 23:57:39.557
+/html/tasks.html.GET ended at 5 ms. UserId: unknown
+/html/tasks.html.GET started at 2024-03-16 23:57:39.971
+/html/tasks.html.GET ended at 4 ms. UserId: unknown
+/html/tasks.html.GET started at 2024-03-16 23:57:40.351
+/html/tasks.html.GET ended at 4 ms. UserId: unknown
+/favicon.ico.GET started at 2024-03-16 23:58:39.447
+/favicon.ico.GET ended at 60 ms. UserId: unknown
+/login.POST started at 2024-03-16 23:58:52.154
+/login.POST ended at 263 ms. UserId: unknown
+/ToDo.GET started at 2024-03-16 23:58:52.509
+/users.GET started at 2024-03-16 23:58:52.510
+/users.GET ended at 271 ms. UserId: 0
+/login.POST started at 2024-03-16 23:59:03.197
+/login.POST ended at 7 ms. UserId: unknown
+/ToDo.GET started at 2024-03-16 23:59:03.266
+/users.GET started at 2024-03-16 23:59:03.270
+/ToDo.GET ended at 7 ms. UserId: 1
+/users.GET ended at 9 ms. UserId: 1
+/login.POST started at 2024-03-16 23:59:11.750
+/login.POST ended at 9 ms. UserId: unknown
+/login.POST started at 2024-03-16 23:59:17.307
+/login.POST ended at 5 ms. UserId: unknown
+/ToDo.GET started at 2024-03-16 23:59:17.372
+/ToDo.GET ended at 4 ms. UserId: 0
+/users.GET started at 2024-03-16 23:59:17.382
+/users.GET ended at 4 ms. UserId: 0
+/login.POST started at 2024-03-17 00:00:20.773
+/login.POST started at 2024-03-17 00:00:20.783
+/login.POST ended at 328 ms. UserId: unknown
+/login.POST ended at 483 ms. UserId: unknown
+/users.GET started at 2024-03-17 00:00:22.089
+/users.GET ended at 5 ms. UserId: 1
+/users/currentUser.GET started at 2024-03-17 00:00:45.050
+/users/currentUser.GET ended at 11 ms. UserId: 1
+/users/currentUser.GET started at 2024-03-17 00:00:47.353
+/users/currentUser.GET ended at 4 ms. UserId: 1
+/html/tasks.html.GET started at 2024-03-17 00:01:52.315
+/html/tasks.html.GET ended at 5 ms. UserId: unknown
+/html/tasks.html.GET started at 2024-03-17 00:02:03.202
+/html/tasks.html.GET ended at 4 ms. UserId: unknown
+/html/tasks.html.GET started at 2024-03-17 00:02:05.629
+/html/tasks.html.GET ended at 2 ms. UserId: unknown
+/html/tasks.html.GET started at 2024-03-17 00:02:33.459
+/html/tasks.html.GET ended at 62 ms. UserId: unknown
+/html/tasks.html.GET started at 2024-03-17 00:02:36.361
+/html/tasks.html.GET ended at 5 ms. UserId: unknown
+/html/tasks.html.GET started at 2024-03-17 00:02:46.156
+/html/tasks.html.GET ended at 25 ms. UserId: unknown
+/html/tasks.html.GET started at 2024-03-17 00:03:37.762
+/html/tasks.html.GET ended at 61 ms. UserId: unknown
+/users.GET started at 2024-03-17 00:04:16.858
+/users.GET ended at 433 ms. UserId: 1
+/login.POST started at 2024-03-17 00:04:27.219
+/login.POST ended at 73 ms. UserId: unknown
+/ToDo.GET started at 2024-03-17 00:04:27.355
+/users.GET started at 2024-03-17 00:04:27.359
+/users.GET ended at 22 ms. UserId: 0
+/ToDo.GET ended at 26 ms. UserId: 0
+/users/currentUser.GET started at 2024-03-17 00:04:31.639
+/users/currentUser.GET ended at 10 ms. UserId: 0
+/users.GET started at 2024-03-17 00:04:40.494
+/users.GET ended at 3 ms. UserId: 0
+/ToDo.GET started at 2024-03-17 00:06:01.205
+/ToDo.GET ended at 559 ms. UserId: 0
+/ToDo.GET started at 2024-03-17 00:16:08.464
+/ToDo.GET ended at 610 ms. UserId: 0

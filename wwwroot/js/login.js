@@ -1,10 +1,7 @@
 const uri = '/login';
-function check() {
-   let token = localStorage.getItem('token');
-    if (token != null) {
-        location.href = "./html/task.html";
-    }
-   
+function withoutLogin(){
+    if(localStorage.getItem("token")!=undefined && sessionStorage.getItem("changeUser")==undefined)
+    location.href = "./html/task.html";
 }
 
 
