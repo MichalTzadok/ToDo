@@ -457,3 +457,31 @@
 /ToDo.GET ended at 559 ms. UserId: 0
 /ToDo.GET started at 2024-03-17 00:16:08.464
 /ToDo.GET ended at 610 ms. UserId: 0
+/favicon.ico.GET started at 2024-03-19 11:00:08.913
+/favicon.ico.GET ended at 50 ms. UserId: unknown
+/login.POST started at 2024-03-19 11:00:13.574
+/login.POST ended at 100 ms. UserId: unknown
+/users.GET started at 2024-03-19 11:00:13.712
+/users.GET ended at 68 ms. UserId: 0
+/users.GET started at 2024-03-19 11:00:38.354
+/users.GET ended at 170 ms. UserId: 0
+/users.GET started at 2024-03-19 11:01:00.218
+/users.GET ended at 6 ms. UserId: 0
+/ToDo.GET started at 2024-03-19 11:01:02.497
+/ToDo.GET ended at 8 ms. UserId: 0
+/ToDo.GET started at 2024-03-19 11:01:20.869
+/ToDo.GET ended at 173 ms. UserId: 0
+/users.GET started at 2024-03-19 11:01:25.108
+/users.GET ended at 10 ms. UserId: 0
+/ToDo.GET started at 2024-03-19 11:02:40.241
+/ToDo.GET ended at 181 ms. UserId: 0
+/users/currentUser.GET started at 2024-03-19 11:02:56.596
+/users/currentUser.GET ended at 6 ms. UserId: 0
+/login.POST started at 2024-03-19 11:03:02.426
+/login.POST ended at 31 ms. UserId: unknown
+/users.GET started at 2024-03-19 11:03:02.479
+/users.GET ended at 7 ms. UserId: 0
+/ToDo.POST started at 2024-03-19 11:03:18.682
+/ToDo.POST ended at 21 ms. UserId: 0
+/ToDo.GET started at 2024-03-19 11:03:18.708
+/ToDo.GET ended at 0 ms. UserId: 0

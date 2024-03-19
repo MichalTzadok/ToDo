@@ -79,7 +79,7 @@ app.UseStaticFiles();
 //js
 
 
-app.UselogMiddleware("file.log");
+// app.UselogMiddleware("file.log");
 
 // Configure the HTTP request pipeline.
 

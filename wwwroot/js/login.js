@@ -1,7 +1,8 @@
 const uri = '/login';
-function withoutLogin(){
-    if(localStorage.getItem("token")!=undefined && sessionStorage.getItem("changeUser")==undefined)
-    location.href = "./html/task.html";
+
+function withoutLogin() {
+    if (localStorage.getItem("token") != undefined && sessionStorage.getItem("changeUser") == undefined && localStorage.getItem("token") != "")
+        location.href = "./html/task.html";
 }
 
 
@@ -22,7 +23,7 @@ function login() {
         redirect: "follow",
     };
 
-    fetch(uri,request)
+    fetch(uri, request)
         .then((response) => response.text())
         .then((result) => {
             if (result.includes("401")) {
@@ -40,5 +41,3 @@ function login() {
         }).catch((error) => alert("error", error));
 
 }
-
-

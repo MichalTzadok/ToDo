@@ -12,13 +12,17 @@ function getItems() {
         redirect: 'follow'
     };
 
-    fetch(uri,requestOptions)
-        .then(response => response.json())
+    fetch(uri, requestOptions)
+        .then(response => {
+            jumpToLogin(response.status);
+            return response.json();
+        })
         .then(data => _displayItems(data))
         .catch(error => console.error('Unable to get items.', error));
-        
+
 }
-function showUserLink(){
+
+function showUserLink() {
     var headers = new Headers();
     headers.append("Authorization", "Bearer " + token);
     headers.append("Content-Type", "application/json");
@@ -28,94 +32,108 @@ function showUserLink(){
         redirect: 'follow'
     };
 
-    fetch('/users',requestOptions)
-        .then(response => {response.status==200? document.getElementById("usersLink").innerHTML="Link to users":console.log("unAouthorize"); })
+    fetch('/users', requestOptions)
+        .then(response => {
+            if (response.status == 200)
+                document.getElementById("usersLink").innerHTML = "Link to users"
+        })
 
-} 
+}
 
 function addItem() {
-        const addNameTextbox = document.getElementById('add-name');
-        const item = {
-            isDone: false,
-            name: addNameTextbox.value.trim()
-        };
-        var headers = new Headers();
-        headers.append("Authorization", "Bearer " + token);
-        headers.append("Content-Type", "application/json");
-        var requestOptions = {
-            method: 'POST',
+    const addNameTextbox = document.getElementById('add-name');
+    const item = {
+        isDone: false,
+        name: addNameTextbox.value.trim()
+    };
+    var headers = new Headers();
+    headers.append("Authorization", "Bearer " + token);
+    headers.append("Content-Type", "application/json");
+    var requestOptions = {
+        method: 'POST',
+        headers: headers,
+        redirect: 'follow',
+        body: JSON.stringify(item)
+
+    };
+    fetch(uri, requestOptions)
+        .then(response => {
+            jumpToLogin(response.status);
+            return response.json();
+        }).then(() => {
+            getItems();
+            addNameTextbox.value = '';
+        })
+        .catch(error => console.error('Unable to add item.', error));
+}
+
+function displayEditForm(id) {
+    const item = tasks.find(item => item.id === id);
+    document.getElementById('edit-name').value = item.name;
+    console.log(item.name);
+    document.getElementById('edit-id').value = item.id;
+    document.getElementById('edit-isDone').checked = item.isDone;
+    document.getElementById('editForm').style.display = 'block';
+}
+
+function updateItem() {
+    const itemId = document.getElementById('edit-id').value;
+    const item = {
+        id: parseInt(itemId, 10),
+        isDone: document.getElementById('edit-isDone').checked,
+        name: document.getElementById('edit-name').value.trim()
+    };
+    var headers = new Headers();
+    headers.append("Authorization", "Bearer " + token);
+    headers.append("Content-Type", "application/json");
+    fetch(`${uri}/${itemId}`, {
+            method: 'PUT',
             headers: headers,
-            redirect: 'follow',
             body: JSON.stringify(item)
+        })
+        .then(response => {
+            jumpToLogin(response.status);
+            return response.json();
+        })
+        .then(() => getItems())
+        .catch(error => console.error('Unable to update item.', error));
 
-        };
-        fetch(uri, requestOptions)
-            .then(response => response.json())
-            .then(() => {
-                getItems();
-                addNameTextbox.value = '';
-            })
-            .catch(error => console.error('Unable to add item.', error));
-    }
-    
-    function displayEditForm(id) {
-        const item = tasks.find(item => item.id === id);
-        document.getElementById('edit-name').value = item.name;
-        console.log( item.name);
-        document.getElementById('edit-id').value = item.id;
-        document.getElementById('edit-isDone').checked = item.isDone;
-        document.getElementById('editForm').style.display = 'block';
-    }
-    function updateItem() {
-            const itemId = document.getElementById('edit-id').value;
-            const item = {
-                id: parseInt(itemId, 10),
-                isDone: document.getElementById('edit-isDone').checked,
-                name: document.getElementById('edit-name').value.trim()
-            };
-            var headers = new Headers();
-            headers.append("Authorization", "Bearer " + token);
-            headers.append("Content-Type", "application/json");
-            fetch(`${uri}/${itemId}`, {
-                    method: 'PUT',
-                    headers:headers,
-                    body: JSON.stringify(item)
-                })
-                .then(() => getItems())
-                .catch(error => console.error('Unable to update item.', error));
-        
-            closeEditInput();
-            return false;
-        }
-        function closeEditInput() {
-            document.getElementById('editForm').style.display = 'none';
-        }
-        function deleteItem(id) {
-            var headers = new Headers();
-            headers.append("Authorization", "Bearer " + token);
-            headers.append("Content-Type", "application/json");
-                fetch(`${uri}/${id}`, {
-                        method: 'DELETE',
-                        headers:headers,
+    closeEditInput();
+    return false;
+}
 
-                    })
-                    .then(() => getItems())
-                    .catch(error => console.error('Unable to delete item.', error));
-            }
-            function _displayCount(itemCount) {
-                const name = (itemCount === 1) ? 'task' : 'task kinds';
-            
-                document.getElementById('counter').innerText = `${itemCount} ${name}`;
-            }
-               
+function closeEditInput() {
+    document.getElementById('editForm').style.display = 'none';
+}
+
+function deleteItem(id) {
+    var headers = new Headers();
+    headers.append("Authorization", "Bearer " + token);
+    headers.append("Content-Type", "application/json");
+    fetch(`${uri}/${id}`, {
+            method: 'DELETE',
+            headers: headers,
+
+        })
+        .then(response => {
+            jumpToLogin(response.status);
+            return response.json();
+        })
+        .then(() => getItems())
+        .catch(error => console.error('Unable to delete item.', error));
+}
+
+function _displayCount(itemCount) {
+    const name = (itemCount === 1) ? 'task' : 'task kinds';
+
+    document.getElementById('counter').innerText = `${itemCount} ${name}`;
+}
+
 function _displayItems(data) {
     const tBody = document.getElementById('tasks');
     tBody.innerHTML = '';
-
     _displayCount(data.length);
-
     const button = document.createElement('button');
-
     data.forEach(item => {
         let isDoneCheckbox = document.createElement('input');
         isDoneCheckbox.type = 'checkbox';
@@ -148,9 +166,9 @@ function _displayItems(data) {
 
     tasks = data;
 }
-const uriOfCurrentUser='/users/currentUser'
+const uriOfCurrentUser = '/users/currentUser'
 
-function getUserId(){
+function getUserId() {
     var headers = new Headers();
     headers.append("Authorization", "Bearer " + token);
     headers.append("Content-Type", "application/json");
@@ -160,50 +178,56 @@ function getUserId(){
         redirect: 'follow'
     };
 
-    fetch(uriOfCurrentUser,requestOptions)
+    fetch(uriOfCurrentUser, requestOptions)
         .then(response => response.json())
-        .then(data=>displayUpdateForm(data))
+        .then(data => displayUpdateForm(data))
         .catch(error => console.error('Unable to get userId.', error));
 }
+
 function displayUpdateForm(user) {
-    console.log(user,document.getElementById('update-id').value,user.id);
-    document.getElementById('update-id').value = user.id;   
+    console.log(user, document.getElementById('update-id').value, user.id);
+    document.getElementById('update-id').value = user.id;
     document.getElementById('update-name').value = user.name;
     document.getElementById('update-password').value = user.password;
     document.getElementById('updateForm').style.display = 'block';
 }
 
-        function updateUserDetails() {
-            const userId = document.getElementById('update-id').value;
-            const item = {
-                id: parseInt(userId, 10),
-                name: document.getElementById('update-name').value.trim(),
-                password: document.getElementById('update-password').value.trim()
-            };
-            var headers = new Headers();
-            headers.append("Authorization", "Bearer " + token);
-            headers.append("Content-Type", "application/json");
-            fetch(uriOfCurrentUser, {
-                    method: 'PUT',
-                    headers:headers,
-                    body: JSON.stringify(item)
-                })
-                .then(() => getItems())
-                .catch(error => console.error('Unable to update user.', error));
-        
-                closeUpdateInput();
-            return false;
-        }
+function updateUserDetails() {
+    const userId = document.getElementById('update-id').value;
+    const item = {
+        id: parseInt(userId, 10),
+        name: document.getElementById('update-name').value.trim(),
+        password: document.getElementById('update-password').value.trim()
+    };
+    var headers = new Headers();
+    headers.append("Authorization", "Bearer " + token);
+    headers.append("Content-Type", "application/json");
+    fetch(uriOfCurrentUser, {
+            method: 'PUT',
+            headers: headers,
+            body: JSON.stringify(item)
+        })
+        .then(() => getItems())
+        .catch(error => console.error('Unable to update user.', error));
 
-       
-       
-            function closeUpdateInput() {
-                document.getElementById('updateForm').style.display = 'none';
-            }
-            function changeUser(){
-                sessionStorage.setItem("changeUser",true);
-                location.href = "../index.html";
-            }
+    closeUpdateInput();
+    return false;
+}
 
 
-   
+
+function closeUpdateInput() {
+    document.getElementById('updateForm').style.display = 'none';
+}
+
+function changeUser() {
+    sessionStorage.setItem("changeUser", true);
+    location.href = "../index.html";
+}
+
+function jumpToLogin(status) {
+    if (status === 401) {
+        localStorage.setItem("token", "");
+        location.href = "../index.html";
+    }
+}
