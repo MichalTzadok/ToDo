@@ -29,7 +29,7 @@ function login() {
             if (result.includes("401")) {
                 name.value = "";
                 password.value = "";
-                alert("not exist!!")
+                alert("user not exist!!")
             } else {
                 token = result;
                 localStorage.setItem("name", name);

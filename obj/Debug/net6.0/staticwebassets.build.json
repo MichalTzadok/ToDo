@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8lbZHv2SdIJCgU2BoM08JY9buscXpApg1eB2blHRFhY=",
+  "Hash": "cJjIuRNpmv6QeTCu12fPkbEJYOl/TzoLsK4NGaQdcqY=",
   "Source": "ToDo",
   "BasePath": "_content/ToDo",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "ToDo\\wwwroot",
       "Source": "ToDo",
-      "ContentRoot": "C:\\Users\\huser\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\The user\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\huser\\ToDo\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\The user\\ToDo\\wwwroot\\css\\site.css",
       "SourceId": "ToDo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\huser\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\The user\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\huser\\ToDo\\wwwroot\\html\\task.html",
+      "Identity": "C:\\Users\\The user\\ToDo\\wwwroot\\html\\task.html",
       "SourceId": "ToDo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\huser\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\The user\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "RelativePath": "html/task.html",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\html\\task.html"
     },
     {
-      "Identity": "C:\\Users\\huser\\ToDo\\wwwroot\\html\\user.html",
+      "Identity": "C:\\Users\\The user\\ToDo\\wwwroot\\html\\user.html",
       "SourceId": "ToDo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\huser\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\The user\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "RelativePath": "html/user.html",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\html\\user.html"
     },
     {
-      "Identity": "C:\\Users\\huser\\ToDo\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\The user\\ToDo\\wwwroot\\index.html",
       "SourceId": "ToDo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\huser\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\The user\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\huser\\ToDo\\wwwroot\\js\\login.js",
+      "Identity": "C:\\Users\\The user\\ToDo\\wwwroot\\js\\login.js",
       "SourceId": "ToDo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\huser\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\The user\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "RelativePath": "js/login.js",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\js\\login.js"
     },
     {
-      "Identity": "C:\\Users\\huser\\ToDo\\wwwroot\\js\\task.js",
+      "Identity": "C:\\Users\\The user\\ToDo\\wwwroot\\js\\task.js",
       "SourceId": "ToDo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\huser\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\The user\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "RelativePath": "js/task.js",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\js\\task.js"
     },
     {
-      "Identity": "C:\\Users\\huser\\ToDo\\wwwroot\\js\\user.js",
+      "Identity": "C:\\Users\\The user\\ToDo\\wwwroot\\js\\user.js",
       "SourceId": "ToDo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\huser\\ToDo\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\The user\\ToDo\\wwwroot\\",
       "BasePath": "_content/ToDo",
       "RelativePath": "js/user.js",
       "AssetKind": "All",

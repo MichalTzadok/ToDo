@@ -40,7 +40,10 @@ function addItem() {
     };
     
     fetch(uri, requestOptions)
-        .then(response => response.json())
+        .then(response => 
+            {   jumpToLogin(response.status)
+                return response.json()
+            })
         .then(() => {
             getItems();
             addIsAdminCheckbox.checked=false
@@ -58,12 +61,15 @@ function deleteItem(id) {
                 headers:headers,
 
             })
-            .then(() => getItems())
-            .catch(error => console.error('Unable to delete item.', error));
+            .then(response => {
+                if (!jumpToLogin(response.status))
+                    getItems();
+            }).catch(error => console.error('Unable to delete item.', error));
     }
 
 function _displayCount(itemCount) {
     const name = (itemCount === 1) ? 'user' : 'user kinds';
+    document.getElementById('counter').innerText = `${itemCount} ${name}`;
 
 }
 function _displayItems(data) {
@@ -75,14 +81,10 @@ function _displayItems(data) {
     const button = document.createElement('button');
 
     data.forEach(item => {
-        let isDoneCheckbox = document.createElement('input');
-        isDoneCheckbox.type = 'checkbox';
-        isDoneCheckbox.disabled = true;
-        isDoneCheckbox.checked = item.isAdmin;
-
-        // let editButton = button.cloneNode(false);
-        // editButton.innerText = 'Edit';
-        // editButton.setAttribute('onclick', `displayEditForm(${item.id})`);
+        let isAdminCheckbox = document.createElement('input');
+        isAdminCheckbox.type = 'checkbox';
+        isAdminCheckbox.disabled = true;
+        isAdminCheckbox.checked = item.isAdmin;
 
         let deleteButton = button.cloneNode(false);
         deleteButton.innerText = 'Delete';
@@ -91,7 +93,7 @@ function _displayItems(data) {
         let tr = tBody.insertRow();
 
         let td1 = tr.insertCell(0);
-        td1.appendChild(isDoneCheckbox);
+        td1.appendChild(isAdminCheckbox);
 
         let td2 = tr.insertCell(1);
         let textNode = document.createTextNode(item.name);
@@ -100,12 +102,18 @@ function _displayItems(data) {
         let passwordNode = document.createTextNode(item.password);
         td3.appendChild(passwordNode);
 
-        // let td4 = tr.insertCell(3);
-        // td4.appendChild(editButton);
-
         let td4 = tr.insertCell(3);
         td4.appendChild(deleteButton);
     });
 
     users = data;
+}
+function jumpToLogin(status) {
+    if (status === 401) {
+        alert("your token got expired,please login ")
+        localStorage.setItem('token', "");
+        location.href = "../index.html";
+        return true;
+    }
+    return false;
 }

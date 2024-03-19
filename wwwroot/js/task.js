@@ -57,12 +57,12 @@ function addItem() {
 
     };
     fetch(uri, requestOptions)
-        .then(response => {
-            jumpToLogin(response.status);
-            return response.json();
-        }).then(() => {
-            getItems();
-            addNameTextbox.value = '';
+        .then((response) => {
+            if(!jumpToLogin(response.status)) {
+                     getItems();
+                     addNameTextbox.value = '';
+                }
+            
         })
         .catch(error => console.error('Unable to add item.', error));
 }
@@ -92,10 +92,9 @@ function updateItem() {
             body: JSON.stringify(item)
         })
         .then(response => {
-            jumpToLogin(response.status);
-            return response.json();
+           if(!jumpToLogin(response.status)) 
+           getItems();
         })
-        .then(() => getItems())
         .catch(error => console.error('Unable to update item.', error));
 
     closeEditInput();
@@ -116,10 +115,8 @@ function deleteItem(id) {
 
         })
         .then(response => {
-            jumpToLogin(response.status);
-            return response.json();
-        })
-        .then(() => getItems())
+            if(!jumpToLogin(response.status))
+                getItems();        })
         .catch(error => console.error('Unable to delete item.', error));
 }
 
@@ -179,7 +176,10 @@ function getUserId() {
     };
 
     fetch(uriOfCurrentUser, requestOptions)
-        .then(response => response.json())
+        .then((response) => {
+            jumpToLogin(response.status);
+            return response.json();
+        })
         .then(data => displayUpdateForm(data))
         .catch(error => console.error('Unable to get userId.', error));
 }
@@ -207,7 +207,10 @@ function updateUserDetails() {
             headers: headers,
             body: JSON.stringify(item)
         })
-        .then(() => getItems())
+        .then((response) => {
+            if(!jumpToLogin(response.status))
+              getItems();
+        })
         .catch(error => console.error('Unable to update user.', error));
 
     closeUpdateInput();
@@ -227,7 +230,12 @@ function changeUser() {
 
 function jumpToLogin(status) {
     if (status === 401) {
-        localStorage.setItem("token", "");
+        alert("your token got expired,please login ")
+        localStorage.setItem('token', "");
         location.href = "../index.html";
+        return true;
+
     }
+    return false;
+
 }
