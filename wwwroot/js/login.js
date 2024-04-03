@@ -13,9 +13,6 @@ function toConnect(){
 function login(name,password) {
     localStorage.clear();
     var headers = new Headers();
-    // const name = document.getElementById('name').value.trim();
-    // const password = document.getElementById('password').value.trim();
-
     headers.append("Content-Type", "application/json");
     var raw = JSON.stringify({
         Name: name,
