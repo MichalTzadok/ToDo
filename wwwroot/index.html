@@ -7,14 +7,17 @@
 </head>
 <body>
     <h1>Hello User</h1>
-    <form action="javascript:void(0);" method="POST" onsubmit="login()">
+    <form action="javascript:void(0);" method="POST" onsubmit="toConnect()">
         <label >Name:</label>
         <input id="name" type="text">
         <label >Password:</label>
         <input id="password" type="password">
         <button type="submit" >Enter </button>
-    </form>
-
+   
+    <div id="g_id_onload" data-client_id="757381288980-bhdqd8t7d30c9qtth0ekn38ltubspb68.apps.googleusercontent.com" data-callback="onSuccess">
+    </div>
+    <div class="g_id_signin" data-type="standard"></div>
+  </form>
     
 </body>
 <div class="postman-run-button"
@@ -37,4 +40,6 @@ data-postman-param="env%5BNew%20Environment%5D=W3sia2V5IjoiaWQiLCJ2YWx1ZSI6IjEiL
 <script type="text/javascript">
   withoutLogin();
 </script>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+
 </html>
