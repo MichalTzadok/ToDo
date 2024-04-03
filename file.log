@@ -485,3 +485,9 @@
 /ToDo.POST ended at 21 ms. UserId: 0
 /ToDo.GET started at 2024-03-19 11:03:18.708
 /ToDo.GET ended at 0 ms. UserId: 0
+/login.POST started at 2024-04-03 16:00:52.547
+/login.POST ended at 2087 ms. UserId: unknown
+/ToDo.GET started at 2024-04-03 16:00:54.720
+/users.GET started at 2024-04-03 16:00:54.721
+/users.GET ended at 92 ms. UserId: 0
+/ToDo.GET ended at 93 ms. UserId: 0
