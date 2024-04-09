@@ -10,16 +10,16 @@
 
 <body>
     <h1>Users CRUD</h1>
-   <h3>Add</h3> 
+    <h3>Add</h3>
     <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
         <label>isAdmin?</label>
-        <input type="checkbox" id="add-isAdmin" >
+        <input type="checkbox" id="add-isAdmin">
         <input type="text" id="add-name" required>
         <input type="password" id="add-password" required>
-        <button type="submit" >add</button>
-    </form> 
+        <button type="submit">add</button>
+    </form>
 
-     
+
 
     <p id="counter"></p>
 
@@ -32,13 +32,13 @@
         <tbody id="users"></tbody>
     </table>
 
-    
-    </body>
-    <script src="../js/user.js"  asp-append-version="true"></script>
-    <script type="text/javascript">
-        getItems();
-        // showUserLink();
-    </script>
+
+</body>
+<script src="../js/user.js" asp-append-version="true"></script>
+<script type="text/javascript">
+    getItems();
+    // showUserLink();
+</script>
 
 
 </html>

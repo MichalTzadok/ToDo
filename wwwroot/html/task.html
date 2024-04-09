@@ -13,7 +13,7 @@
     <h3>Add</h3>
     <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
         <input type="text" id="add-name" placeholder="New task">
-        <button type="submit" >Add</button>
+        <button type="submit">Add</button>
     </form>
 
     <div id="editForm">
@@ -21,14 +21,14 @@
         <form action="javascript:void(0);" onsubmit="updateItem()">
             <input type="hidden" id="edit-id">
             <input type="checkbox" id="edit-isDone">
-            <input type="text" id="edit-name"> 
-            <button type="submit" >Save</button>
+            <input type="text" id="edit-name">
+            <button type="submit">Save</button>
             <a onclick="closeEditInput()" aria-label="Close">&#10006;</a>
         </form>
     </div>
 
     <p id="counter"></p>
-    
+
     <table>
         <tr>
             <th>IsDone?</th>
@@ -45,21 +45,21 @@
         <h3>Edit your details:</h3>
         <form action="javascript:void(0);" onsubmit="updateUserDetails()">
             <input type="hidden" id="update-id">
-            <input type="password" id="update-password" >
-            <input type="text" id="update-name"> 
-            <button type="submit" >Save</button>
+            <input type="password" id="update-password">
+            <input type="text" id="update-name">
+            <button type="submit">Save</button>
             <a onclick="closeUpdateInput()" aria-label="Close">&#10006;</a>
         </form>
     </div>
     <button onclick="changeUser()">change user</button>
     <a id="usersLink" href="../html/user.html"></a>
 
-    
-    </body>
-    <script src="../js/task.js"  asp-append-version="true"></script>
-    <script type="text/javascript">
-        getItems();
-        showUserLink();
-    </script>
+
+</body>
+<script src="../js/task.js" asp-append-version="true"></script>
+<script type="text/javascript">
+    getItems();
+    showUserLink();
+</script>
 
 </html>

@@ -495,3 +495,27 @@
 /ToDo.GET started at 2024-04-03 17:00:57.365
 /ToDo.GET ended at 210 ms. UserId: unknown
 /users.GET ended at 210 ms. UserId: unknown
+/favicon.ico.GET started at 2024-04-09 16:47:56.337
+/favicon.ico.GET ended at 86 ms. UserId: unknown
+/login.POST started at 2024-04-09 16:48:15.542
+/login.POST ended at 308 ms. UserId: unknown
+/ToDo.GET started at 2024-04-09 16:48:15.934
+/users.GET started at 2024-04-09 16:48:15.934
+/users.GET ended at 101 ms. UserId: 0
+/ToDo.GET ended at 101 ms. UserId: 0
+/ToDo.GET started at 2024-04-09 16:48:18.042
+/users.GET started at 2024-04-09 16:48:18.042
+/ToDo.GET ended at 5 ms. UserId: 0
+/users.GET ended at 7 ms. UserId: 0
+/ToDo.GET started at 2024-04-09 16:49:55.807
+/users.GET started at 2024-04-09 16:49:55.807
+/ToDo.GET ended at 213 ms. UserId: 0
+/users.GET ended at 213 ms. UserId: 0
+/users.GET started at 2024-04-09 16:49:59.595
+/ToDo.GET started at 2024-04-09 16:49:59.595
+/ToDo.GET ended at 11 ms. UserId: 0
+/users.GET ended at 11 ms. UserId: 0
+/ToDo.GET started at 2024-04-09 16:50:14.839
+/users.GET started at 2024-04-09 16:50:14.846
+/ToDo.GET ended at 15 ms. UserId: unknown
+/users.GET ended at 9 ms. UserId: unknown

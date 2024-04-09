@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/login.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <h1>Hello User</h1>
-    <form action="javascript:void(0);" method="POST" onsubmit="toConnect()">
-        <label >Name:</label>
-        <input id="name" type="text">
-        <label >Password:</label>
-        <input id="password" type="password">
-        <button type="submit" >Enter </button>
-   
-    <div id="g_id_onload" data-client_id="757381288980-bhdqd8t7d30c9qtth0ekn38ltubspb68.apps.googleusercontent.com" data-callback="onSuccess">
+  <form action="javascript:void(0);" method="POST" onsubmit="toConnect()">
+    <label>Name:</label>
+    <input id="name" type="text">
+    <label>Password:</label>
+    <input id="password" type="password">
+    <button type="submit">Enter </button>
+
+    <div id="g_id_onload" data-client_id="757381288980-bhdqd8t7d30c9qtth0ekn38ltubspb68.apps.googleusercontent.com"
+      data-callback="onSuccess">
     </div>
     <div class="g_id_signin" data-type="standard"></div>
   </form>
-    
+
 </body>
-<div class="postman-run-button"
-data-postman-action="collection/fork"
-data-postman-visibility="public"
-data-postman-var-1="31284732-9d9fb21a-9564-4f55-b000-9470acacd68a"
-data-postman-collection-url="entityId=31284732-9d9fb21a-9564-4f55-b000-9470acacd68a&entityType=collection&workspaceId=ec02fe13-df11-4237-8975-f51a55a3d62d"
-data-postman-param="env%5BNew%20Environment%5D=W3sia2V5IjoiaWQiLCJ2YWx1ZSI6IjEiLCJlbmFibGVkIjp0cnVlLCJ0eXBlIjoiZGVmYXVsdCJ9XQ=="></div>
+<div class="postman-run-button" data-postman-action="collection/fork" data-postman-visibility="public"
+  data-postman-var-1="31284732-9d9fb21a-9564-4f55-b000-9470acacd68a"
+  data-postman-collection-url="entityId=31284732-9d9fb21a-9564-4f55-b000-9470acacd68a&entityType=collection&workspaceId=ec02fe13-df11-4237-8975-f51a55a3d62d"
+  data-postman-param="env%5BNew%20Environment%5D=W3sia2V5IjoiaWQiLCJ2YWx1ZSI6IjEiLCJlbmFibGVkIjp0cnVlLCJ0eXBlIjoiZGVmYXVsdCJ9XQ==">
+</div>
 <script type="text/javascript">
-  (function (p,o,s,t,m,a,n) {
+  (function (p, o, s, t, m, a, n) {
     !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
-    !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+    !o.getElementById(s + t) && o.getElementsByTagName("head")[0].appendChild((
       (n = o.createElement("script")),
-      (n.id = s+t), (n.async = 1), (n.src = m), n
+      (n.id = s + t), (n.async = 1), (n.src = m), n
     ));
   }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
 </script>
